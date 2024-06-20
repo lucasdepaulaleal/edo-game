@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Volume do Áudio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Configurar Volume do Áudio</h1>
+    <audio id="myAudio" autoplay controls >
+        <source src="assets/audio-fundo.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="controls">
+        <label for="volumeControl">Volume: </label>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('myAudio');
+            var volumeControl = document.getElementById('volumeControl');
+            
+            // Definindo o volume inicial
+            audio.volume = volumeControl.value;
+
+            // Atualizando o volume conforme o controle deslizante é ajustado
+            volumeControl.addEventListener('input', function() {
+                audio.volume = this.value;
+            });
+        });
+    </script>
+</body>
+</html>

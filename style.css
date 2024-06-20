@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: 'mine';
+    src: url('fonts/Minecraft.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'retro';
+    src: url('fonts/PublicPixel-E447g.ttf') format('truetype');
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0px 10px;
+    /* background: linear-gradient(#00A2FF, #6BEFFE); */
+    background-image: url(assets/1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden;
+
+    font-family: mine, 'Arial';
+}
+
+
+
+h1 {
+    font-family: retro, 'Arial';
+    color: white;
+    font-size: 80px;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+h1:hover {
+    font-size: 85px;
+}
+
+.edo {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.botoes {
+    margin-top: 100px;
+}
+
+button {
+    background: none;
+    border: none;
+    
+}
+
+.btn p {
+    background-image: url(assets/botao\ \(1\).svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: mine;
+    width: 220px;
+    
+    font-size: 25px;
+    color: black;
+   
+    padding: 20px;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    margin: 0px;
+}
+
+.btn p:hover {
+    font-size: 28px;
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btnAudio {
+    font-family: retro, 'Arial';
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+
+
+}
+
+.audioFundo {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

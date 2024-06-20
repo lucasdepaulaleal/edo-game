@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDO player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="edo">
+        <h1>EDO's <br> PLAYER</h1>
+        <div class="botoes">
+            <button class="btn">
+                <p><a href="#">Vamos Jogar!</a></p>
+            </button>
+            <button class="btn">
+                <p><a href="#">Vamos Aprender!</a></p>
+            </button>
+
+        </div>
+    </div>
+    
+    <div class="audioFundo">
+        <audio id="myAudio" autoplay>
+            <source src="assets/audio-fundo.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        
+        <button onclick="togglePlayPause()" class="btnAudio" id="playPauseButton">
+            Pause music 
+            
+        </button>
+        <img id="iconeSom" src="assets/audio.png" alt="simbolo de som">
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
