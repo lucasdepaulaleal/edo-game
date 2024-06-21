@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'mine';
+    src: url('../fonts/Minecraft.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'retro';
+    src: url('fonts/PublicPixel-E447g.ttf') format('truetype');
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 10px 10px;
+    /* background: linear-gradient(#00A2FF, #6BEFFE); */
+    background-image: url(../assets/2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden;
+
+    font-family: mine, 'Arial';
+}
+
+.tituloConteudo {
+    background-image: url(../assets/fundo-quadrado-amarelo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+
+    font-size: large;
+}
+
+
+.conteudo {
+    margin: auto;
+    color: white;
+    background-image: url(../assets/quadro-negro.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 616px;
+    height: 339px;
+
+}
+
+.conteudo p {
+    padding: 30px;
+    text-align: justify;
+    font-size: medium;
+
+}
