@@ -57,3 +57,29 @@ body {
     font-size: medium;
 
 }
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btnNext {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    margin: 0px;
+}
+
+.button {
+    width: 100px;
+}
+
+.button:hover {
+    width: 110px;
+}
