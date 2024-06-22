@@ -8,7 +8,10 @@
     src: url('fonts/PublicPixel-E447g.ttf') format('truetype');
 }
 
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 body {
@@ -22,37 +25,57 @@ body {
     height: 100vh;
     overflow-y: hidden;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-family: mine, 'Arial';
 }
 
-.tituloConteudo {
-    background-image: url(../assets/fundo-quadrado-amarelo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 250px;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    font-size: large;
 }
 
+.tituloConteudo {
+    background-color: #FFC800;
+    border: 3px solid black;
+    text-align: center;
+
+    margin: 20px auto;
+    max-width: 400px;
+    font-size: large;
+
+}
+
+.tituloConteudo h1 {
+    padding: 10px 20px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid #B38C02;
+    border-bottom: 3px solid #B38C02;
+
+    color: black;
+    font-size: larger;
+    letter-spacing: 1px;
+}
 
 .conteudo {
-    margin: auto;
+    margin: 20px;
+    padding: 10px;
     color: white;
-    background-image: url(../assets/quadro-negro.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 616px;
-    height: 339px;
+    background-color: black;
+    border: 6px solid white;
+    border-radius: 3px;
+    max-width: 800px;
+    max-height: 500px;
 
 }
 
 .conteudo p {
-    padding: 30px;
+    padding: 20px;
     text-align: justify;
     font-size: medium;
 
@@ -65,7 +88,7 @@ body {
 }
 
 .btn {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +96,7 @@ body {
 
 }
 
-.btnNext {
+.btnPages {
     background: none;
     border: none;
     color: inherit;
@@ -82,10 +105,12 @@ body {
     margin: 0px;
 }
 
-.button {
-    width: 100px;
-}
 
 .button:hover {
-    width: 110px;
+    transform: scale(1.1);
+
+}
+
+.button:active {
+    transform: scale(0.95);
 }

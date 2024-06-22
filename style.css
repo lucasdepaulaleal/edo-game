@@ -35,7 +35,7 @@ h1 {
 }
 
 h1:hover {
-    font-size: 85px;
+    transform: scale(1.1);
 }
 
 .edo {
@@ -71,10 +71,15 @@ button {
     margin: 0px;
 }
 
-.btn p:hover {
+.btn:hover {
     font-size: 28px;
-    width: 250px;
+    transform: scale(1.1);
 }
+
+.btn:active {
+    transform: scale(0.95);
+}
+
 
 a {
     text-decoration: none;
@@ -87,7 +92,16 @@ a {
     color: black;
     cursor: pointer;
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
+    align-items: center;
+
+}
+
+.btnAudio:active {
+    transform: scale(0.95);
 }
 
 .audioFundo {
@@ -99,3 +113,7 @@ a {
     align-items: center;
 }
 
+.iconSound {
+    transform: scale(1.2);
+    margin-left: 10px;
+}
