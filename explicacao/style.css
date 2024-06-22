@@ -68,7 +68,7 @@ body {
 
 
 .conteudo {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     color: white;
     background-color: black;
@@ -133,6 +133,10 @@ body {
     border: 3px solid white;
     padding: 5px;
     font-family: mine;
+    margin-top: 10px;
+    font-size: medium;
+    letter-spacing: 0.5px;
+
 
 }
 .btnExemplo a {

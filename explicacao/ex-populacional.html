@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 
-
-    <title>Decaimento Radioativo</title>
+    <title>Crescimentro Populacional</title>
     <style>
         /*  */
         body {
-            background-image: url(../assets/4.png);
+            background-image: url(../assets/3.png);
 
         }
     </style>
@@ -19,37 +18,45 @@
 
 </head>
 <body>
-    <div>
+    <div class="content">
         <div class="tituloConteudo" id="titulo">
             <h1>
-                Decaimento Radioativo
+                Crescimentro Populacional
             </h1>
+
         </div>
         <div class="conteudo">
             <p id="texto">
-                O decaimento radioativo pode ser modelado por uma EDO de primeira ordem onde a taxa de decaimento é proporcional à quantidade de material radioativo presente:
+                Resolver a EDO dP/dt = 0.1P com a condição inicial P(0) = 100.
             </p>
-            <img src="../assets/equations/eq-radioativo.png" alt="" class="equation">
+            <img src="../assets/equations/eq-ex-populacional.png" alt="passo a passo da resolução" class="equation">
             <p>
-                onde N é a quantidade de material e lambda é a constante de decaimento.
+                Usando a condição inicial P(0) = 100:
             </p>
+            
+            <img src="../assets/equations/eq-ex-populacional-2.png" alt="condição inicial" class="equation">
+            <p>
+                Portanto, a solução é:
+            </p>
+            <img src="../assets/equations/eq-ex-populacional-3.png" alt="resposta do exemplo" class="equation">
+
             <button class="btnExemplo button">
-                <a href="ex-radioativo.html" target="_self">
-                    Exemplo
+                <a href="populacional.html" target="_self">
+                    Explicação
                 </a>
             </button>
-            
+
         </div>
         <div class="btn">
             <button class="btnPages">
-                <a href="resfriamento.html" target="_self">
+                <a href="radioativo.html" target="_self">
                     <img src="../assets/back-button.png" alt="botão voltar" class="button" id="backButton">
 
                 </a>
             </button>
             <button class="btnPages">
-                <a href="populacional.html" target="_self">
-                    <img src="../assets/next-button.png" alt="botão próximo" class="button">
+                <a href="#" target="_self">
+                    <img src="../assets/quiz-button.png" alt="botão de ir para o quiz" class="button">
                 </a>
                 
             </button>

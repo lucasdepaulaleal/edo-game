@@ -5,50 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Resfriamento de Newton</title>
 
-
-    <title>Decaimento Radioativo</title>
     <style>
         /*  */
         body {
-            background-image: url(../assets/4.png);
+            background-image: url(../assets/2.png);
 
         }
     </style>
-
 
 </head>
 <body>
     <div>
         <div class="tituloConteudo" id="titulo">
-            <h1>
-                Decaimento Radioativo
-            </h1>
+            <h1>Resfriamento de Newton</h1>
+            
         </div>
         <div class="conteudo">
             <p id="texto">
-                O decaimento radioativo pode ser modelado por uma EDO de primeira ordem onde a taxa de decaimento é proporcional à quantidade de material radioativo presente:
+                Resolver a EDO dT/dt = -0.1(T - 20) com a condição inicial T(0) = 80.
             </p>
-            <img src="../assets/equations/eq-radioativo.png" alt="" class="equation">
+            <img src="../assets/equations/eq-ex-newton.png" alt="passo a passo da resolução" class="equation">
             <p>
-                onde N é a quantidade de material e lambda é a constante de decaimento.
+                Usando a condição inicial T(0) = 80:
             </p>
+            
+            <img src="../assets/equations/eq-ex-newton-2.png" alt="condição inicial" class="equation">
+            <p>
+                Portanto, a solução é:
+            </p>
+            <img src="../assets/equations/eq-ex-newton-3.png" alt="resposta do exemplo" class="equation">
+
             <button class="btnExemplo button">
-                <a href="ex-radioativo.html" target="_self">
-                    Exemplo
+                <a href="resfriamento.html"  target="_self">
+                    Explicação
                 </a>
             </button>
-            
+
         </div>
         <div class="btn">
             <button class="btnPages">
-                <a href="resfriamento.html" target="_self">
+                <a href="../index.html"  target="_self">
                     <img src="../assets/back-button.png" alt="botão voltar" class="button" id="backButton">
-
                 </a>
             </button>
             <button class="btnPages">
-                <a href="populacional.html" target="_self">
+                <a href="radioativo.html"  target="_self">
                     <img src="../assets/next-button.png" alt="botão próximo" class="button">
                 </a>
                 
