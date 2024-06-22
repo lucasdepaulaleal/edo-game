@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decaimento Radioativo</title>
+    <style>
+        /*  */
+        body {
+            background-image: url(../assets/4.png);
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <div class="tituloConteudo" id="titulo">
+            Decaimento Radioativo
+        </div>
+        <div class="conteudo">
+            <p id="texto">
+                O decaimento radioativo pode ser modelado por uma EDO de primeira ordem onde a taxa de decaimento é proporcional à quantidade de material radioativo presente:
+            </p>
+            <img src="../assets/equations/eq-radioativo.png" alt="" class="equation">
+            <p>
+                onde N é a quantidade de material e lambda é a constante de decaimento.
+            </p>
+            
+        </div>
+        <div class="btn">
+            <button class="btnNext">
+                <a href="resfriamento.html">
+                    <img src="../assets/back-button.png" alt="botão voltar" class="button" id="backButton">
+
+                </a>
+            </button>
+            <button id="nextButton" class="btnNext">
+                <a href="populacional.html">
+                    <img src="../assets/next-button.png" alt="botão próximo" class="button">
+                </a>
+                
+            </button>
+        </div>
+    </div>
+
+    <script src="./app/printConteudo.js"></script>
+</body>
+</html>
+
+</html>

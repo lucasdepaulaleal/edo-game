@@ -18,7 +18,7 @@ body {
     background-image: url(../assets/2.png);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     height: 100vh;
     overflow-y: hidden;
 
@@ -56,6 +56,12 @@ body {
     text-align: justify;
     font-size: medium;
 
+}
+
+.equation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
