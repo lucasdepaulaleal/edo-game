@@ -40,13 +40,26 @@ h1:hover {
 
 }
 
+.creditos a {
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.creditos:hover {
+    transform: scale(1.1);
+}
+
+.creditos:active {
+    transform: scale(0.95);
+}
+
 .edo {
     text-align: center;
     line-height: 1.2;
 }
 
 .botoes {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 button {
@@ -108,7 +121,7 @@ a {
 
 .audioFundo {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
