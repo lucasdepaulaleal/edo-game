@@ -1,0 +1,15 @@
+[
+    {
+        "titulo": "Crescimento Populacional",
+        "texto": "As EDOs são frequentemente usadas para modelar o crescimento populacional. O modelo mais simples é a equação diferencial de crescimento exponencial:"
+    },
+    {
+        "titulo": "Movimento Harmônico Simples",
+        "texto": "As EDOs também são usadas para descrever o movimento de sistemas oscilatórios, como massas em molas ou circuitos elétricos."
+    },
+    {
+        "titulo": "Circuitos Elétricos",
+        "texto": "EDOs são essenciais na análise de circuitos elétricos, como em circuitos RLC (resistor, indutor e capacitor)."
+    }
+
+]
