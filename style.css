@@ -35,6 +35,18 @@ h1 {
     cursor: pointer;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
 h1:hover {
     transform: scale(1.1);
 
