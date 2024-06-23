@@ -83,6 +83,24 @@ button {
   transform: scale(0.95);
 }
 
+.btnPages {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnPages:hover {
+  transform: scale(1.1);
+
+}
+
+.btnPages:active {
+  transform: scale(0.95);
+}
+
 .answer:disabled {
   cursor: not-allowed;
 }
