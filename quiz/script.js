@@ -21,7 +21,10 @@ const backgrounds = [
 const titles = [
   "Básico",
   "Resfriamento de Newton",
+  "Resfriamento de Newton",
   "Crescimento Populacional",
+  "Crescimento Populacional",
+  "Decaimento Radioativo",
   "Decaimento Radioativo",
   "Mista",
 ];
@@ -102,6 +105,9 @@ function finishGame() {
     case performance >= 50:
       message = "Bom";
       break;
+    case performance >= 30:
+      message = "Quase lá :(";
+      break;
     default:
       message = "Pode melhorar :(";
   }
@@ -152,6 +158,16 @@ const questions = [
   },
   {
     question:
+      "Uma xícara de chá é servida a 90°C em um ambiente onde a temperatura é constante de 15°C. Se a constante de resfriamento é k=0.05ˆ-1, quanto tempo levará para que a temperatura do chá atinja 30°C?",
+    answers: [
+      { text: "12 minutos", correct: false },
+      { text: "18 minutos", correct: false },
+      { text: "15 minutos", correct: true },
+      { text: "20 minutos", correct: false },
+    ],
+  },
+  {
+    question:
       "Uma população inicial de 1000 indivíduos cresce a uma taxa de 5% ao ano. Qual será a população após 10 anos?",
     answers: [
       { text: "1648", correct: true },
@@ -162,12 +178,32 @@ const questions = [
   },
   {
     question:
+      "Uma colônia de bactérias cresce de acordo com a equação dP/dt=0.05P(1000−P), onde P(t) representa a população no tempo t. Se inicialmente há 500 bactérias, quanto tempo levará para que a população atinja 800 bactérias?",
+    answers: [
+      { text: "10 horas", correct: false },
+      { text: "12 horas", correct: false },
+      { text: "15 horas", correct: true },
+      { text: "18 horas", correct: false },
+    ],
+  },
+  {
+    question:
       "A meia-vida de um certo isótopo radioativo é de 5 anos. Se inicialmente há 200g do isótopo, quanto restará após 10 anos?",
     answers: [
       { text: "100g", correct: false },
       { text: "75g", correct: false },
       { text: "50g", correct: true },
       { text: "25g", correct: false },
+    ],
+  },
+  {
+    question:
+      "Um material radioativo decai com uma meia-vida de 30 anos. Se inicialmente há 800g do material, quanto tempo levará para que reste 100g?",
+    answers: [
+      { text: "60 anos", correct: false },
+      { text: "90 anos", correct: true },
+      { text: "120 anos", correct: false },
+      { text: "150 anos", correct: false },
     ],
   },
   {
