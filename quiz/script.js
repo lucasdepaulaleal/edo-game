@@ -105,6 +105,9 @@ function finishGame() {
     case performance >= 50:
       message = "Bom";
       break;
+    case performance >= 30:
+      message = "Quase lá :(";
+      break;
     default:
       message = "Pode melhorar :(";
   }
