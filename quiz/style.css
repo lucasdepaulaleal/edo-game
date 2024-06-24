@@ -101,6 +101,12 @@ button {
   transform: scale(0.95);
 }
 
+.backButton {
+  position: relative;
+  right: 10px;
+
+}
+
 .answer:disabled {
   cursor: not-allowed;
 }
